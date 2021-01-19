@@ -1,10 +1,6 @@
 #int -> bool
 #returns True if the starting number reduces to 42 otherwise False
 def bears(n):
-    """A True return value means that it is possible to win
-    the bear game by starting with n bears. A False return value means
-    that it is not possible to win the bear game by starting with n bears.
-    """
     if n == 42:
         return True
     if n < 42:
