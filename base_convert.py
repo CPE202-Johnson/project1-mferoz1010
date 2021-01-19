@@ -5,13 +5,11 @@ def convert(num, b):
     final_str = ''
     quotient = num // b
     remainder = num % b
+    if remainder > 9:
+        remainder = chr(remainder + 55)
     if quotient == 0:
         final_str += str(remainder)
         return final_str
     else:
-        if remainder > 9:
-            remainder = chr(remainder + 55)
         final_str = str(convert(quotient, b)) + str(remainder)
         return final_str
-    
-    
