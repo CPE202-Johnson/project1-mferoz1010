@@ -6,7 +6,7 @@ def convert(num, b):
     quotient = num // b
     remainder = num % b
     if quotient == 0:
-        final_str += '1'
+        final_str += str(remainder)
         return final_str
     else:
         if remainder > 9:
