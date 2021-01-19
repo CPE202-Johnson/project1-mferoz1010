@@ -12,10 +12,11 @@ def bears(n):
     if n % 3 == 0 or n % 4 == 0:
         multi = int(str(n)[len(str(n))-1]) * int(str(n)[len(str(n))-2])
         if multi == 0:
-            return False
-        reduced = n - multi
-        if bears(reduced) == True:
-            return True
+            pass
+        else:
+            reduced = n - multi
+            if bears(reduced) == True:
+                return True
     if n % 5 == 0:
         reduced = n - 42
         if bears(reduced) == True:
